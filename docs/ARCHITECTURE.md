@@ -32,11 +32,11 @@ Nothing is sent to any server at any point. No analytics, no logging, no network
 
 ## Files
 
-- `index.html` — page structure, form fields, preview panel
-- `style.css` — visual design (ivory/steel control panel theme)
-- `generator.js` — content library (CATEGORIES, HABITS, TOOLS), state, markdown assembly, download logic
-- `README.md` — project overview
-- `docs/ARCHITECTURE.md` — this file
+- `index.html`: page structure, form fields, preview panel
+- `style.css`: visual design (ivory/steel control panel theme)
+- `generator.js`: content library (CATEGORIES, HABITS, TOOLS), state, markdown assembly, download logic
+- `README.md`: project overview
+- `docs/ARCHITECTURE.md`: this file
 
 ## Why static and not a connected app
 
