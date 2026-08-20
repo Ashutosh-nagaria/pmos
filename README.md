@@ -2,6 +2,20 @@
 
 A tool that generates a personalized set of instructions for how you want an AI assistant (Claude, ChatGPT, or similar) to work with you as a PM.
 
+**Live: [ashutosh-nagaria.github.io/pmos](https://ashutosh-nagaria.github.io/pmos)**
+
+## How to use it
+
+1. Open [ashutosh-nagaria.github.io/pmos](https://ashutosh-nagaria.github.io/pmos)
+2. Set your working style depth (Skip, Light, or Heavy) for each category: Discovery, Strategy, Documents, Metrics, Execution, Communication, Go-to-Market
+3. Select the tools you use
+4. Check off the daily habits you want your assistant to follow
+5. Optionally turn on design principles or auto documentation
+6. Watch the markdown build live in the preview panel on the right
+7. Click "Download pmos.md" to save the file to your computer
+8. Paste the file's content into your assistant's custom instructions, for example a Claude Project's custom instructions, a ChatGPT custom GPT's instructions, or a `CLAUDE.md` file if you use Claude Code
+9. From then on, that assistant follows your working style in every conversation with it
+
 ## What it does
 
 Every PM works differently. Some are PRD heavy, some are execution heavy, some live in metrics, some barely touch documents. Most AI tools give every PM the same generic prompts.
