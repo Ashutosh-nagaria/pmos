@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PMOS — Build your Product Manager Operating System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">PMOS</span>
+      <span class="brand-sub">Product Manager Operating System</span>
+    </div>
+    <div class="status-light" id="statusLight">
+      <span class="dot"></span>
+      <span id="statusText">STANDBY</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout">
+
+  <section class="panel form-panel">
+
+    <div class="intro">
+      <h1>Configure your PMOS</h1>
+      <p>Set how you actually work. This generates one markdown file you paste into Claude, ChatGPT, or any assistant's custom instructions. Nothing here is sent anywhere, everything runs in your browser.</p>
+    </div>
+
+    <!-- WORKING STYLE -->
+    <div class="section">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <h2>Working style</h2>
+      </div>
+      <p class="section-note">For each area, set how deep it goes in your day to day. Add specifics if you want them reflected.</p>
+
+      <div id="categoryList" class="category-list"></div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="section">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <h2>Tools you use</h2>
+      </div>
+      <div class="chip-grid" id="toolsGrid"></div>
+      <input type="text" id="toolsOther" class="text-input" placeholder="Other tools (optional)">
+    </div>
+
+    <!-- HABITS -->
+    <div class="section">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <h2>Daily habits</h2>
+      </div>
+      <p class="section-note">Pick the standing instructions you want your assistant to follow when asked, or at the start of a session.</p>
+      <div id="habitList" class="habit-list"></div>
+    </div>
+
+    <!-- EXTRAS -->
+    <div class="section">
+      <div class="section-head">
+        <span class="section-index">04</span>
+        <h2>Extra skills</h2>
+      </div>
+      <div class="extra-block" id="designBlock">
+        <label class="toggle-row">
+          <input type="checkbox" id="designToggle">
+          <span class="toggle-label">Design principles</span>
+        </label>
+        <div class="extra-fields" id="designFields">
+          <input type="text" id="designWords" class="text-input" placeholder="Style words, e.g. minimal, warm, editorial">
+          <input type="text" id="designTool" class="text-input" placeholder="Preferred tool, e.g. Figma Make, v0">
+        </div>
+      </div>
+      <div class="extra-block" id="docBlock">
+        <label class="toggle-row">
+          <input type="checkbox" id="docToggle">
+          <span class="toggle-label">Auto documentation</span>
+        </label>
+      </div>
+    </div>
+
+  </section>
+
+  <aside class="panel preview-panel">
+    <div class="preview-head">
+      <span>OUTPUT — pmos.md</span>
+      <span class="line-count" id="lineCount">0 lines</span>
+    </div>
+    <pre class="preview-body" id="previewBody"></pre>
+    <button class="download-btn" id="downloadBtn">Download pmos.md</button>
+  </aside>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Ashutosh Nagaria. This file only contains instructions, it does not connect to any account itself. Your assistant will use whatever tools or connectors you already have set up.</p>
+</footer>
+
+<script src="generator.js"></script>
+</body>
+</html>
