@@ -1,4 +1,4 @@
-# PMOS — Product Manager Operating System
+# PMOS - Product Manager Operating System
 
 A tool that generates a personalized set of instructions for how you want an AI assistant (Claude, ChatGPT, or similar) to work with you as a PM.
 
